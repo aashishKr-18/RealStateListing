@@ -137,15 +137,15 @@
 .listPropertyWrapper {
     position: relative;
     background-color: #fff;
-    height: 87.5vh;
+    height: 92.5vh;
     width: 35vw;
     border-radius: 20px;
 }
 
 .listPropertyWrapper>h2 {
     text-align: center;
-    margin: 1.5rem 0;
-    margin-bottom: 1.5rem;
+    margin: 2.5rem 0;
+    margin-bottom: 3.5rem;
 }
 
 .listPropertyWrapper>form>div>label {

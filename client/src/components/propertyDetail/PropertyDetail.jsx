@@ -164,13 +164,13 @@ const PropertyDetail = () => {
               <button onClick={() => setShowForm(true)} className={classes.contactOwner}>
                 Contact owner
               </button>
-              <span onClick={handleBookmark}>
+              {/* <span onClick={handleBookmark}>
                 {isBookmarked ? (
                   <BsFillBookmarkFill size={20} />
                 ) : (
                   <BsBookmark size={20} />
                 )}
-              </span>
+              </span> */}
             </div>
           }
           {user?._id == null && (

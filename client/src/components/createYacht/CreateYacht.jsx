@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import { AiFillFileImage } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { request } from '../../util/fetchAPI'
@@ -131,3 +130,4 @@ const CreateYacht = () => {
 }
 
 export default CreateYacht
+

@@ -19,9 +19,12 @@ const Footer = () => {
         </div>
         <div className={classes.col}>
           <h2>Contacts</h2>
-          <p>Phone: +91 7300454266</p>
-          <p>GitHub: anuragk-24</p>
-          <p>GitHub: anshumanraj252</p>
+          <p> <a style={{textDecoration:"none",color:"#555"}} href="https://github.com/aashishKr-18"> GitHub: aashishKr-18</a></p>
+        
+          <p> <a style={{textDecoration:"none",color:"#555"}} href="https://github.com/anshumanraj252"> GitHub: anshumanraj252</a></p>
+          <p> <a style={{textDecoration:"none",color:"#555"}} href="https://github.com/anuragK-24"> GitHub: aruragK-24</a></p>
+      
+      
         </div>
         <div className={classes.col}>
           <h2>Location</h2>

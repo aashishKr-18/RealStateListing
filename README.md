@@ -18,7 +18,7 @@ This is the MERN stack application of real state listing. It build using the tec
    npx nodemon
    ```
 3. ```
-   npm i mongoose express dotenv 
+   npm i mongoose express dotenv express-validator
     ```
 4. Put a `.env` file that will contain two variable.
    
