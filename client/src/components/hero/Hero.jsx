@@ -54,17 +54,19 @@ const Hero = () => {
             onClick={handleSearch}
           />
         </div>
-        <div className={classes.search}>
-          Search all the user profiles
-          <Link className={classes.searchUser} to="/users">
-            <AiOutlineSearch className={classes.searchIcon} />
-          </Link>
-        </div>
-        <div className={classes.search}>
-          Search all the user that have Listed Properties
-          <Link className={classes.searchUser} to="/usersWithProp">
-            <AiOutlineSearch className={classes.searchIcon} />
-          </Link>
+        <div style={{margin:"1em", display:"flex",flexDirection:"column", width:"auto"}} className={classes.options}>
+          <div style={{backgroundColor:"rgb(128, 4, 23)",borderRadius:"10px"}} className={classes.search}>
+            All Users
+            <Link className={classes.searchUser} to="/users">
+              <AiOutlineSearch className={classes.searchIcon} />
+            </Link>
+          </div>
+          <div style={{backgroundColor:"rgb(128, 4, 23)",borderRadius:"10px",margin:"0.1em"}} className={classes.search}>
+            User having Properties
+            <Link className={classes.searchUser} to="/usersWithProp">
+              <AiOutlineSearch className={classes.searchIcon} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
