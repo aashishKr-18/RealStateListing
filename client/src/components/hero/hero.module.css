@@ -6,7 +6,18 @@
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: darken;
 }
-
+.searchUser{
+    background-color: wheat;
+    height: 2em;
+    width: 3em;
+    border-radius: 31%; 
+    margin-left: 2em;
+}
+.search{
+    padding: 1em;   
+    font-size: 2em;
+    color: orange;
+}
 .wrapper{
     max-width: 1180px;
     margin: 0 auto;

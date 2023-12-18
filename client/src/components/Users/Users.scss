@@ -1,0 +1,45 @@
+@import "../../style/variable.scss";
+.Users {
+  padding-bottom: 5%;
+  margin: 0% 10% 0% 10%;
+  background-repeat: no-repeat;
+  &__Header {
+    text-shadow: 2px 2px 4px #ffae4dba;
+    font-size: 2.4em;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  &__Wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+  }
+}
+
+@media #{$media-mobile} {
+  .Users {
+    background: none;
+    &__Heading {
+      margin: 19% 4% 10% 4%;
+      font-size: 2em;
+    }
+    &__Wrapper {
+      margin-top: 5%;
+      width: 100%;
+      flex-direction: column;
+      height: 90%;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &__Item {
+      padding: 4px;
+      margin-right: 10px;
+      margin-left: 10px;
+      flex-basis: 18%;
+    }
+  }
+}

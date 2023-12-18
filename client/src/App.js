@@ -19,6 +19,8 @@ import MyProfile from './components/myProfile/MyProfile';
 import UpdateProfile from './components/updateProfile/UpdateProfile';
 import './App.css';
 import NotFound from './components/notFound/NotFound';
+import Users from './components/Users/Users';
+import UsersWithProp from './components/UsersWithProp/UsersWithProp';
 
 function App() {
   const { user } = useSelector((state) => state.auth)
@@ -40,6 +42,8 @@ function App() {
             <Footer />
           </>
         } />
+        <Route path='/users' element={!user ? <Users /> : <Navigate to='/' />} />
+        <Route path='/usersWithProp' element={!user ? <UsersWithProp /> : <Navigate to='/' />} />
         <Route path='/signup' element={!user ? <Signup /> : <Navigate to='/' />} />
         <Route path='/signin' element={!user ? <Signin /> : <Navigate to='/' />} />
         <Route path='/properties' element={
