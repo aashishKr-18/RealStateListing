@@ -1,52 +1,55 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const PropertySchema = new mongoose.Schema({
+const PropertySchema = new mongoose.Schema(
+  {
     currentOwner: {
-        type: mongoose.Types.ObjectId,
-        ref: "User",
-        required: true
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+      required: true,
     },
     title: {
-        type: String,
-        required: true,
-        min: 6,
+      type: String,
+      required: true,
+      min: 1,
     },
     type: {
-        type: String,
-        enum: ["beach", "mountain", "village"],
-        required: true
+      type: String,
+      enum: ["beach", "mountain", "village"],
+      required: true,
     },
     desc: {
-        type: String,
-        required: true,
-        min: 50,
+      type: String,
+      required: true,
+      min: 1,
     },
     img: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     price: {
-        type: Number,
-        required: true
+      type: Number,
+      required: true,
     },
     sqmeters: {
-        type: Number,
-        required: true,
-        min: 15
+      type: Number,
+      required: true,
+      min: 1,
     },
     continent: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     beds: {
-        type: Number,
-        required: true,
-        min: 1
+      type: Number,
+      required: true,
+      min: 1,
     },
     bookmarkedUsers: {
-        type: [String],
-        default: []
-    }
-}, {timestamps: true})
+      type: [String],
+      default: [],
+    },
+  },
+  { timestamps: true }
+);
 
-module.exports = mongoose.model("Property", PropertySchema)
+module.exports = mongoose.model("Property", PropertySchema);
