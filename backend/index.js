@@ -11,9 +11,8 @@ const userController = require("./controllers/userController");
 const commentController = require("./controllers/commentController");
 const subscribemail = require("./controllers/subscribemail");
 
-// db connecting
 mongoose.set("strictQuery", false);
-// mongoose.connect(process.env.MONGO_URL);
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -40,3 +39,6 @@ app.use("/email", subscribemail);
 // starting server
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log("Server has been started"));
+
+// http://localhost:5000/user/find-users-with-properties
+// app.use("/api/auth", require("./Routes/Auth"));
